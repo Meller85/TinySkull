@@ -1,0 +1,326 @@
+
+
+ body{
+    background-color: white;
+ }
+    /* overall tiny skull logo */
+.logo{
+    width: 800px;
+    margin-left:auto;
+    margin-right: auto;
+  }
+
+    /* Navigation bar */
+  nav {
+    margin: 1px auto 0;
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background-color:white;
+    border-radius: 8px;
+    font-size: 0;
+  }
+  
+  nav a {
+    line-height: 30px;
+    height: 100%;
+    font-size: 20px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 300;
+    font-style: normal;
+
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  nav .animation {
+    position: relative;
+    height: 16%;
+    left: 30px;
+    top: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+  }
+  a:nth-child(1) {
+    width: 120px;
+  }
+  a:nth-child(2) {
+    width: 160px;
+  }
+  a:nth-child(3) {
+    width: 120px;
+  }
+  a:nth-child(4) {
+    width: 170px;
+  }
+
+  nav .start-home, a:nth-child(1):hover~.animation {
+    
+    width: 120px;
+    left: 0;
+    background-color: gray;
+  }
+  nav .start-shirts, a:nth-child(2):hover~.animation {
+    width: 160px;
+    left: 120px;
+    background-color: rgb(85, 73, 73);
+  }
+  nav .start-about, a:nth-child(3):hover~.animation {
+    width: 110px;
+    left: 285px;
+    background-color: rgb(116, 71, 71);
+  }
+  nav .start-contact, a:nth-child(4):hover~.animation {
+    width: 170px;
+    left: 400px;
+    background-color: rgb(133, 57, 57);
+  }
+  .shirts{
+    font-size: 20px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 300;
+  }
+
+   /* styling for Shirt page*/
+h2{
+  font-size: 20px;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 300;
+}
+p{
+    font-size: 14px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 10px;
+  }
+
+
+
+  
+  /* Three columns side by side */
+
+.column {
+
+  float: left;
+  width: 32.4%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    font-family: "Press Start 2P", system-ui;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+    font-family: "Press Start 2P", system-ui;
+  }
+
+  h3{
+    font-family: "Press Start 2P", system-ui;
+    }
+
+  /* Stylesheet for Product page */
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    font-family: "Press Start 2P", system-ui;
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+   /* Stylesheet for Contact me page*/
+
+h1 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 600;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+h4 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 20px;
+    color: #e90808;
+    line-height: 1.5;
+}
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.styled-input label {
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 13px;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 40px;
+    border: 0;
+    font-family: "Press Start 2P", system-ui;
+    width: 100%;
+    font-size: 12px;
+    background-color: grey;
+    color: white;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+    padding: 7px 35px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+              0 2px 10px 0 rgba(0,0,0,0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+              0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width:100%;
+        float: none;
+        text-align:center;
+    }
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
